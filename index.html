@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Liens vers les fichiers CSS -->
+    <link rel="stylesheet" href="assets/css/smallreset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Icône de la page -->
+    <link rel="icon" type="image/png" href="assets/img/logo.png" alt="Logo de la page">
+
+    <title>Convertisseur de coordonnées Minecraft</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- ********** HEADER ********** -->
+        <header>
+            <div class="header">
+                <img src="assets/img/logoOverworld.png" alt="Logo Minecraft" id="logo">
+                <h1 >Convertisseur de coordonnées Minecraft</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" data-section="convert">Convertisseur</a>
+                    </li>
+                    <li>
+                        <a href="#" data-section="history">Historique</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- ********** MAIN ********** -->
+        <main>
+
+            <!-- Section du Convertisseur -->
+            <section id="convert">
+                <form>
+                    <div class="coord-x">
+                        <label for="coordX">Coordonnée X :</label>
+                        <input type="number" id="coordX" placeholder="Coordonnées X">    
+                    </div>
+                
+                    <div class="coord-z">
+                        <label for="coordZ">Coordonnée Z :</label>
+                        <input type="number" id="coordZ" placeholder="Coordonnées Z">    
+                    </div>
+
+                    <div class="dimension-select">
+                        <label for="dimension">Dimension :</label>
+                        <select id="dimension">
+                            <option value="overworld">Overworld</option>
+                            <option value="nether">Nether</option>
+                        </select>
+                    </div>
+            
+                    <div class="convert-button">
+                        <button id="convertButton">Convertir</button>
+                    </div>
+                </form>
+            
+                <div class="result-container">
+                    <h3 id="result"></h3>
+                </div>
+            </section>
+
+            <!-- Section de l'historique -->
+            <section id="history"  class="hidden">
+                <table id="historyTable">
+                    <thead>
+                        <tr>
+                            <th data-title="Recherche">Recherche</th>
+                            <th class="overworld" data-label="Overworld X">Overworld X</th>
+                            <th class="overworld" data-label="Overworld Z">Overworld Z</th>
+                            <th class="nether" data-label="Nether X">Nether X</th>
+                            <th class="nether" data-label="Nether Z">Nether Z</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyTableBody"></tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    
+    <!-- ********** FOOTER ********** -->
+    <footer>
+            <p><span id="copyright"></span> &copy Convertisseur de coordonnées Minecraft By JUSTAFRE Caroline</p>
+    </footer>
+    
+
+    <!-- Script JavaScript -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
