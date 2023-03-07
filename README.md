@@ -12,4 +12,10 @@ Ce site est conçu pour convertir les coordonnées __X__ et __Z__ entre l'__over
 J'espère que ce convertisseur vous sera utile pour naviguer entre les différentes dimensions de Minecraft !
 
 ## Technologies utilisées
-Ce site a été développé en utilisant HTML, CSS et JavaScript.
+Ce site a été développé en utilisant les technologies suivantes :
+* HTML
+* CSS
+* JS
+
+## Auteur
+Ce site a été créé par JUSTAFRE Caroline.
